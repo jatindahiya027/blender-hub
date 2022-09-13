@@ -17,6 +17,7 @@ The following environment is required.
 Execute the following command to start it
 
 ```bash
+git clone https://github.com/jatindahiya027/blender-hub
 cd blender-hub
 yarn install
 yarn start
