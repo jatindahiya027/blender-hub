@@ -1,0 +1,24 @@
+{
+  "name": "blender-hub",
+  "version": "1.1.1",
+  "main": "src/index.js",
+  "repository": "https://github.com/Chipsnet/blender-hub.git",
+  "author": "Minato Minami(Chipsnet) <doronomori660@outlook.jp>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "electron-log": "^4.2.0",
+    "electron-updater": "^4.3.1",
+    "node-zip": "^1.1.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --publish never -c build/electron-builder.yml",
+    "pre-build": "electron-builder --publish never -c build/electron-builder-pre.yml",
+    "release": "electron-builder --publish always -c build/electron-builder.yml",
+    "pre-release": "electron-builder --publish always -c build/electron-builder-pre.yml"
+  },
+  "devDependencies": {
+    "electron": "9.0.2",
+    "electron-builder": "22.7.0"
+  }
+}
